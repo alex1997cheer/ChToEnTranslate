@@ -123,9 +123,14 @@ namespace GenarateCHtoEN
                 string getPath = f.DirectoryName;
                 string ChName = f.Name;
                 string name_en = "";
-                string filterName = "_en.html";
+                string filterNamehtml = "_en.html";
+                string filterNamejs = "_en.js";
                 //filter english file
-                if (ChName.Contains(filterName)) {
+                if (ChName.Contains(filterNamehtml)) {
+                    break;
+                }
+                if (ChName.Contains(filterNamejs))
+                {
                     break;
                 }
                 //生成英文文件名
